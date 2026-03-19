@@ -3,3 +3,9 @@
 # Mathias e Cina
 
 [LINK](https://4asa-foscolo.github.io/intro-to-web-programming-paride-ficiente/)
+
+# TO DO
+- hero section (presentazione)
+- div e section
+- storia
+- piu dettaaagli
