@@ -4,86 +4,188 @@
     <title>Palermo FC</title>
     
     <style>
-       body{
-          font-family:arial; 
-          margin: 0;
-          background-color: #ffe6f0;
-        }
-        .hero h1 {
+        body {
+            font-family: Arial;
             margin: 0;
-            font-size: 40px;
+            background-color: violet;
+            transition: 0.3s;
         }
+
+        .dark-mode {
+            background-color: #111;
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            color: pink;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 80px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: pink;
+        }
+
         .container {
-             padding: 20px;
+            padding: 20px;
         }
+
+        section {
+            margin-bottom: 40px;
+        }
+
         img {
             display: block;
             margin: auto;
+            border-radius: 10px;
+            max-width: 100%;
+        }
+
+        iframe {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            background-color: black;
+            color: pink;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* formazione */
+        .field {
+            background-color: green;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .line {
+            margin: 10px 0;
+        }
+
+        /* responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
 
-<body style="background-color:violet">
+<body>
 
-    
-<section class="hero">
-<h1>Palermo FC</h1>
-<p>la squadra rosa-nero della sicilia</p>
-</ section>
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Palermo_FC_logo.svg/800px-Palermo_FC_logo.svg.png">
+    <h1>Palermo FC</h1>
+    <p>La squadra rosanero della Sicilia</p>
+</header>
 
-< div class="container">
-    
-<section>
-    <h2>presentazione</h2>
-    <p>
-    Il Palermo FC è una squadra di calcio italiana della città di Palermo.</p>
-    </p>
-  </section>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#storia">Storia</a>
+    <a href="#video">Video</a>
+    <a href="#formazione">Formazione</a>
+</nav>
 
-<section>
-<h2>Colori della squadra</h2>
-<p>I colori del Palermo sono il rosa e il nero.</p>
+<div class="container">
+
+<section id="home">
+    <h2>Presentazione</h2>
+    <p>Il Palermo FC è una squadra di calcio italiana della città di Palermo.</p>
 </section>
 
-<section>
+<section id="storia">
 <h2>Stadio</h2>
-<p>Il Palermo gioca allo Stadio Renzo Barbera.</p>
+<p>Stadio Renzo Barbera</p>
+<img src="https://assets.palermofc.com/wp-content/uploads/2025/10/WhatsApp-Image-2025-08-10-at-12.53.52-800x800.jpeg">
+</section>
 
-<img src="https://assets.palermofc.com/wp-content/uploads/2025/10/WhatsApp-Image-2025-08-10-at-12.53.52-800x800.jpeg" alt="Stadio Renzo Barbera" width="600">
+<section id="video">
+<h2>Video dello stadio</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0bqJXr8QK6Y" 
+title="YouTube video" frameborder="0" allowfullscreen></iframe>
 </section>
 
 <section>
-<h2>Storia</h2>
-<p>
-Il Palermo Football Club è stato fondato nel 1900 ed è una delle squadre più antiche d’Italia.
-Nel corso della sua storia ha giocato molte stagioni in Serie A e Serie B.
-Il Palermo ha vissuto i suoi anni migliori negli anni 2000, quando ha partecipato anche alle competizioni europee.
-Tra i giocatori più famosi passati dal Palermo ci sono Paulo Dybala e Edinson Cavani.
-Negli anni la squadra ha avuto anche momenti difficili, ma è sempre riuscita a tornare nel calcio professionistico.
-Attualmente 4 in serie b combattendo per arrivare in a nella stagione26/27.
-</p>
+<h2>Statistiche</h2>
+<table>
+<tr><th>Anno</th><th>Campionato</th></tr>
+<tr><td>2024</td><td>Serie B</td></tr>
+<tr><td>2025</td><td>Serie B</td></tr>
+</table>
 </section>
 
+<section id="formazione">
+<h2>Formazione (4-3-3)</h2>
+
+<div class="field">
+    <div class="line">⚽ Attacco: LW - ST - RW</div>
+    <div class="line">🎯 Centrocampo: CM - CM - CM</div>
+    <div class="line">🛡️ Difesa: LB - CB - CB - RB</div>
+    <div class="line">🧤 Portiere: GK</div>
+</div>
+
+</section>
 
 <section>
-        <ul>
-            <li>Fondazione: 1900</li>
-            <li>Città: Palermo</li>
-            <li>Stadio: Renzo Barbera</li>
-            <li>Colori: Rosa e Nero</li>
-        </ul>
-    </section>
-    
-    <section>
-<h2>Giocatori famosi</h2>
-<ul>
-    <li>Paulo Dybala</li>
-    <li>Edinson Cavani</li>
-    <li>Javier Pastore</li>
-</ul>
+<h2>Modalità</h2>
+<button onclick="toggleDarkMode()">🌙 Cambia tema</button>
 </section>
 
 </div>
+
+<footer>
+<p>Pagina creata da studente 💻</p>
+</footer>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
 
 </body>
 </html>
