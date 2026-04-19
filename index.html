@@ -2,172 +2,209 @@
 <html>
 <head>
     <title>Palermo FC</title>
-    
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background-color: violet;
-            transition: 0.3s;
-        }
 
-        .dark-mode {
-            background-color: #111;
-            color: white;
-        }
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: linear-gradient(to bottom, violet, pink);
+    transition: 0.3s;
+}
 
-        header {
-            background-color: black;
-            color: pink;
-            padding: 20px;
-            text-align: center;
-        }
+/* DARK MODE */
+.dark-mode {
+    background: #111;
+    color: white;
+}
 
-        header img {
-            width: 80px;
-        }
+/* HEADER */
+header {
+    background-color: black;
+    color: pink;
+    text-align: center;
+    padding: 20px;
+}
 
-        nav {
-            background-color: #222;
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-        }
+header img {
+    width: 80px;
+}
 
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* NAV */
+nav {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
 
-        nav a:hover {
-            color: pink;
-        }
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .container {
-            padding: 20px;
-        }
+nav a:hover {
+    color: pink;
+}
 
-        section {
-            margin-bottom: 40px;
-        }
+/* CONTAINER */
+.container {
+    padding: 20px;
+}
 
-        img {
-            display: block;
-            margin: auto;
-            border-radius: 10px;
-            max-width: 100%;
-        }
+/* SECTIONS ANIMATION */
+section {
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s;
+}
 
-        iframe {
-            display: block;
-            margin: auto;
-            max-width: 100%;
-        }
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+/* IMAGES */
+img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
 
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-        button {
-            padding: 10px;
-            background-color: black;
-            color: pink;
-            border: none;
-            cursor: pointer;
-        }
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
 
-        footer {
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
+/* BUTTON */
+button {
+    padding: 10px;
+    background: black;
+    color: pink;
+    border: none;
+    cursor: pointer;
+}
 
-        /* formazione */
-        .field {
-            background-color: green;
-            padding: 20px;
-            border-radius: 10px;
-            color: white;
-            text-align: center;
-        }
+/* FIELD */
+.field {
+    background: green;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
 
-        .line {
-            margin: 10px 0;
-        }
+/* QUIZ */
+.quiz {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-        /* responsive */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 24px;
-            }
-        }
-    </style>
+.dark-mode .quiz {
+    background: #333;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Palermo_FC_logo.svg/800px-Palermo_FC_logo.svg.png">
-    <h1>Palermo FC</h1>
-    <p>La squadra rosanero della Sicilia</p>
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Palermo_FC_logo.svg/800px-Palermo_FC_logo.svg.png">
+<h1>Palermo FC</h1>
+<p>La squadra rosanero della Sicilia</p>
 </header>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#storia">Storia</a>
-    <a href="#video">Video</a>
-    <a href="#formazione">Formazione</a>
+<a href="#home">Home</a>
+<a href="#storia">Storia</a>
+<a href="#stadio">Stadio</a>
+<a href="#video">Video</a>
+<a href="#formazione">Formazione</a>
+<a href="#quiz">Quiz</a>
 </nav>
 
 <div class="container">
 
 <section id="home">
-    <h2>Presentazione</h2>
-    <p>Il Palermo FC è una squadra di calcio italiana della città di Palermo.</p>
+<h2>Presentazione</h2>
+<p>Il Palermo FC è una squadra di calcio italiana della città di Palermo.</p>
+
+<h3>Colori</h3>
+<p>Rosa e Nero</p>
+
+<ul>
+<li>Fondazione: 1900</li>
+<li>Città: Palermo</li>
+<li>Stadio: Renzo Barbera</li>
+</ul>
 </section>
 
 <section id="storia">
-<h2>Stadio</h2>
-<p>Stadio Renzo Barbera</p>
+<h2>Storia</h2>
+<p>
+Il Palermo Football Club è stato fondato nel 1900 ed è una delle squadre più antiche d’Italia.
+Nel corso della sua storia ha giocato molte stagioni in Serie A e Serie B.
+Il Palermo ha vissuto i suoi anni migliori negli anni 2000, quando ha partecipato anche alle competizioni europee.
+Tra i giocatori più famosi ci sono Paulo Dybala, Edinson Cavani e Javier Pastore.
+Negli anni ha avuto momenti difficili ma è sempre tornato nel calcio professionistico.
+Oggi è in Serie B e punta alla promozione.
+</p>
+</section>
+
+<section id="stadio">
+<h2>Stadio Renzo Barbera</h2>
 <img src="https://assets.palermofc.com/wp-content/uploads/2025/10/WhatsApp-Image-2025-08-10-at-12.53.52-800x800.jpeg">
 </section>
 
 <section id="video">
-<h2>Video dello stadio</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0bqJXr8QK6Y" 
-title="YouTube video" frameborder="0" allowfullscreen></iframe>
+<h2>Video</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0bqJXr8QK6Y" allowfullscreen></iframe>
 </section>
 
 <section>
 <h2>Statistiche</h2>
 <table>
-<tr><th>Anno</th><th>Campionato</th></tr>
-<tr><td>2024</td><td>Serie B</td></tr>
-<tr><td>2025</td><td>Serie B</td></tr>
+<tr><th>Anno</th><th>Campionato</th><th>Posizione</th></tr>
+<tr><td>2024</td><td>Serie B</td><td>6°</td></tr>
+<tr><td>2025</td><td>Serie B</td><td>5°</td></tr>
 </table>
 </section>
 
 <section id="formazione">
 <h2>Formazione (4-3-3)</h2>
-
 <div class="field">
-    <div class="line"> Attacco: LW - ST - RW</div>
-    <div class="line"> Centrocampo: CM - CM - CM</div>
-    <div class="line"> Difesa: LB - CB - CB - RB</div>
-    <div class="line"> Portiere: GK</div>
+<p> LW - ST - RW</p>
+<p> CM - CM - CM</p>
+<p> LB - CB - CB - RB</p>
+<p> GK</p>
 </div>
-
 </section>
 
 <section>
@@ -175,12 +212,50 @@ title="YouTube video" frameborder="0" allowfullscreen></iframe>
 <button onclick="toggleDarkMode()"> Cambia tema</button>
 </section>
 
+<section id="quiz">
+<h2>Quiz Palermo</h2>
+
+<div class="quiz">
+<p>In che anno è stato fondato il Palermo?</p>
+
+<button onclick="checkAnswer(1)">1900</button>
+<button onclick="checkAnswer(2)">1950</button>
+
+<p id="result"></p>
 </div>
 
+</section>
+
+</div>
+
+<footer>
+<p>Progetto Palermo FC </p>
+</footer>
 
 <script>
+/* DARK MODE */
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
+}
+
+/* SCROLL ANIMATION */
+window.addEventListener("scroll", function() {
+    let sections = document.querySelectorAll("section");
+    sections.forEach(sec => {
+        let position = sec.getBoundingClientRect().top;
+        if(position < window.innerHeight - 100){
+            sec.classList.add("show");
+        }
+    });
+});
+
+/* QUIZ */
+function checkAnswer(ans){
+    if(ans == 1){
+        document.getElementById("result").innerText = "Corretto!";
+    } else {
+        document.getElementById("result").innerText = "Sbagliato!";
+    }
 }
 </script>
 
